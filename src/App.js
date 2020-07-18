@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from 'react';
 import './App.css';
 import Counter from './components/ComponentFunction';
-
+import UnreadMessages from './components/UnreadMessages';
 function App() {
 
   const [showCounters, setShowCounters] = useState(true);
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {showCounters &&
+        {/* {showCounters &&
           <Fragment>
             <Counter initialValue={0} step={2} />
             <Counter initialValue={1} step={3} />
@@ -21,7 +21,8 @@ function App() {
           </Fragment>
         }
         <br />
-        <button onClick={quitarCounters}> {showCounters ? 'Quitar Counters' : 'Mostrar Counters'} </button>
+        <button onClick={quitarCounters}> {showCounters ? 'Quitar Counters' : 'Mostrar Counters'} </button> */}
+        <UnreadMessages unreadMessages = {[]}/>
       </header>
     </div>
   );
