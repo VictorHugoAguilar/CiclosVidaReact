@@ -1,0 +1,52 @@
+// Importamos los coleres desde las variables de colors.scss
+@import '../../colors.scss';
+
+// Creamos unas variables para reutilizar en el código
+$padding: 0.5em;
+$border-radius: 0.3em;
+
+
+.userForm {
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    min-width: 40%;
+    justify-content: space-around;
+    padding: 1.5em;
+    background-color: $solid;
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 19px 0px $solidLigth;
+    color: $solidLigth;
+
+    select,
+    input {
+        all: unset;
+        color: $solidLigth;
+        padding: $padding;
+        border-radius: $border-radius;
+        background-color: $solidMedium;
+    }
+
+    select,
+    input {
+        color: $solidLigth !important;
+    }
+
+    button {
+        text-align: center !important;
+        all: unset;
+        cursor: pointer;
+        padding: $padding;
+        border-radius: $border-radius;
+        color: $solidLighest;
+        background-color: $solidLigth;
+    }
+
+    button:hover {
+        background-color: $solidMedium;
+    }
+
+    ::placeholder {
+        color: $solidLigth;
+    }
+}

@@ -1,5 +1,5 @@
 import React, { useState, Fragment } from 'react';
-import './App.css';
+import './App.scss';
 import Counter from './components/ComponentFunction';
 import UnreadMessages from './components/UnreadMessages';
 import UserForm from './components/userForm/UserForms';
