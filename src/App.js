@@ -2,6 +2,7 @@ import React, { useState, Fragment } from 'react';
 import './App.css';
 import Counter from './components/ComponentFunction';
 import UnreadMessages from './components/UnreadMessages';
+import UserForm from './components/userForm/UserForms';
 function App() {
 
   const [showCounters, setShowCounters] = useState(true);
@@ -22,7 +23,9 @@ function App() {
         }
         <br />
         <button onClick={quitarCounters}> {showCounters ? 'Quitar Counters' : 'Mostrar Counters'} </button> */}
-        <UnreadMessages unreadMessages = {[]}/>
+        {/*         <UnreadMessages unreadMessages = {[]}/> */}
+
+        <UserForm />
       </header>
     </div>
   );
